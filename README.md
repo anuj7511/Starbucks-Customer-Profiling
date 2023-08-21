@@ -3,6 +3,9 @@
 Understanding our customers is the key to sustain a profitable business. To understand them well and identify their needs based on demographics, we need to pay attention on their purchase behaviour by collecting and analysing their purchasing behaviour through an app.
 
 The data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Periodically, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). However, some users might not receive any offer during certain weeks.
+
+Not all users receive the same offer, and that is the CHALLENGE to solve with this data set.
+
 Using the data, I aim to :
 - Gain understanding what types of customer characteristics and demographics are there.
 - What offer should be sent to each customer ?
@@ -11,6 +14,15 @@ Using the data, I aim to :
 An unsupervised machine learning model with K-Means algorithm is used to cluster the customers. 
 
 A supervised machine learning model with regression is used to predict the customer response rate to offer. 
+
+## Problem Statement
+Your task is to combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type. This data set is a simplified version of the real Starbucks app because the underlying simulator only has one product whereas Starbucks actually sells dozens of products.
+
+Every offer has a validity period before the offer expires. As an example, a BOGO offer might be valid for only 5 days. You'll see in the data set that informational offers have a validity period even though these ads are merely providing information about a product; for example, if an informational offer has 7 days of validity, you can assume the customer is feeling the influence of the offer for 7 days after receiving the advertisement.
+
+You'll be given transactional data showing user purchases made on the app including the timestamp of purchase and the amount of money spent on a purchase. This transactional data also has a record for each offer that a user receives as well as a record for when a user actually views the offer. There are also records for when a user completes an offer.
+
+Keep in mind as well that someone using the app might make a purchase through the app without having received an offer or seen an offer.
 
 ## Project Metrics :
 
