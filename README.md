@@ -21,12 +21,12 @@ The number of clusters in K-Means algorithm is choosed with 2 metrics :
 The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
 ```
 
-2. The Inertia / Sum Square Error (SSE) value, can be recognized as a measure of how internally coherent clusters are. We seek to minimize the value.
+2. The Inertia / [Sum Square Error (SSE)](https://en.wikipedia.org/wiki/Residual_sum_of_squares) value, can be recognized as a measure of how internally coherent clusters are. We seek to minimize the value.
 
 ### Supervised Machine Learning Model
 The regression metrics are :
-1. Mean Squared Error (MSE):
-2. Coefficient of Determination (R^2)
+1. [Mean Squared Error (MSE)](https://en.wikipedia.org/wiki/Mean_squared_error):
+2. [Coefficient of Determination (R^2)](https://en.wikipedia.org/wiki/Coefficient_of_determination)
 
 ## File Descriptions <a name="files"></a>
 
