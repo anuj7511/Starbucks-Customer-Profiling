@@ -1,6 +1,6 @@
 ## Project Motivation<a name="motivation"></a>
 
-Understanding our customers is the key providing them a good service and sustain a profitable business. To understand them well, we need to pay attention on their purchase behaviour. One way we can collect and analyse their purchasing behaviour through an app, then identify their needs based on demographics.
+Understanding our customers is the key to sustain a profitable business. To understand them well and identify their needs based on demographics, we need to pay attention on their purchase behaviour by collecting and analysing their purchasing behaviour through an app.
 
 The data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Periodically, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). However, some users might not receive any offer during certain weeks.
 Using the data, I aim to :
@@ -8,10 +8,28 @@ Using the data, I aim to :
 - What offer should be sent to each customer ?
 - How well can we predict customer response to offer ?
 
-An unsupervised machine learning model with K-Means algorithm is used to cluster the customers. The number of clusters is chosen with 2 metrics - the higher Silhouette score and the lower Inertia / SSE value.
+An unsupervised machine learning model with K-Means algorithm is used to cluster the customers. 
 
-A supervised machine learning model with regression is used to predict the customer response rate to offer. The used metrics are mean squared error (MSE) and coefficent of determination (R^2)
+A supervised machine learning model with regression is used to predict the customer response rate to offer. 
 
+## Project Metrics :
+
+### Unsupervised Machine Learning Model
+An unsupervised machine learning model with K-Means is used to cluster the customers.
+
+The number of clusters is choosed with 2 metrics :
+1. The [Silhouttee score](https://en.wikipedia.org/wiki/Silhouette_(clustering))
+```
+The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
+```
+
+2. The Inertia / Sum Square Error (SSE) value, can be recognized as a measure of how internally coherent clusters are. We seek to minimize the value.
+
+### Supervised Machine Learning Model
+A Supervised Machine learning using regression algorithm is used to predict customers offer completed rate.
+The regression metrics are :
+1. Mean Squared Error (MSE):
+2. Coefficient of Determination (R^2)
 
 ## File Descriptions <a name="files"></a>
 
